@@ -1,0 +1,131 @@
+/* styles.css */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Center the form on the page */
+  #registrationForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  /* Form group styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style radio buttons and checkboxes */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* Add some spacing between radio button and checkbox labels */
+  label input[type="radio"],
+  label input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Style the textarea */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the country dropdown */
+  select {
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 25px; /* Add space for custom arrow */
+    background: url("arrow-down.png") no-repeat right center; /* Replace with your custom arrow icon */
+  }
+  
+  /* Apply styles when a field has an error */
+  .form-group.has-error input,
+  .form-group.has-error select,
+  .form-group.has-error textarea {
+    border-color: #ff0000;
+  }
+  
+  .form-group.has-error .error-message {
+    display: block;
+  }
+  
+  /* Style the required asterisk */
+  label.required::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+  }
+  
+  /* Style the optional label */
+  label.optional::after {
+    content: "(optional)";
+    color: #666;
+    margin-left: 5px;
+  }
+  
+  /* Additional styles if needed */
+  
+  /* Responsive styles */
+  /* Large devices (lg) */
+  @media (min-width: 1200px) {
+    /* Adjust form width for larger screens */
+    #registrationForm {
+      max-width: 500px;
+    }
+  }
+  
+  /* Medium devices (md) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    /* Adjust form width for medium-sized screens */
+    #registrationForm {
+      max-width: 400px;
+    }
+  }
+  
+  /* Small devices (sm) */
+  @media (max-width: 767px) {
+    /* Adjust form width for smaller screens */
+    #registrationForm {
+      max-width: 300px;
+    }
+  }
+  
